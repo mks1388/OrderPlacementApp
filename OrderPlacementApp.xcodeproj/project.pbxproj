@@ -15,6 +15,9 @@
 		161AA431214C093F0022BB7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161AA42F214C093F0022BB7E /* LaunchScreen.storyboard */; };
 		161AA43C214C093F0022BB7E /* OrderPlacementAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA43B214C093F0022BB7E /* OrderPlacementAppTests.swift */; };
 		161AA447214C093F0022BB7E /* OrderPlacementAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA446214C093F0022BB7E /* OrderPlacementAppUITests.swift */; };
+		21A2F692306FBA8036DFE281 /* Pods_OrderPlacementApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */; };
+		7D48AA6653DE209F627DD0F3 /* Pods_OrderPlacementAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA76E7158942FF12E6DB7FD9 /* Pods_OrderPlacementAppUITests.framework */; };
+		D7AFF4ED25818C0E518B15A0 /* Pods_OrderPlacementAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8DEC12A37CB318E1A1BC9F /* Pods_OrderPlacementAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2A7E41D0F6ADC0C1620BE8 /* Pods-OrderPlacementAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementAppTests/Pods-OrderPlacementAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		161AA420214C093B0022BB7E /* OrderPlacementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderPlacementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161AA423214C093B0022BB7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		161AA425214C093B0022BB7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		161AA442214C093F0022BB7E /* OrderPlacementAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderPlacementAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		161AA446214C093F0022BB7E /* OrderPlacementAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPlacementAppUITests.swift; sourceTree = "<group>"; };
 		161AA448214C093F0022BB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26334A42AE7A3386E427EC80 /* Pods-OrderPlacementAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementAppUITests/Pods-OrderPlacementAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A699CB7CFF624F53E09C835 /* Pods-OrderPlacementAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementAppUITests/Pods-OrderPlacementAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderPlacementApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FB2AF9A036B7D44692B283 /* Pods-OrderPlacementApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C2F303B62BAF0C772AC2F6CA /* Pods-OrderPlacementAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementAppTests/Pods-OrderPlacementAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA53BEBF179BBCA898A9BC6C /* Pods-OrderPlacementApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA76E7158942FF12E6DB7FD9 /* Pods_OrderPlacementAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderPlacementAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8DEC12A37CB318E1A1BC9F /* Pods_OrderPlacementAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderPlacementAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A2F692306FBA8036DFE281 /* Pods_OrderPlacementApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AFF4ED25818C0E518B15A0 /* Pods_OrderPlacementAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D48AA6653DE209F627DD0F3 /* Pods_OrderPlacementAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				161AA43A214C093F0022BB7E /* OrderPlacementAppTests */,
 				161AA445214C093F0022BB7E /* OrderPlacementAppUITests */,
 				161AA421214C093B0022BB7E /* Products */,
+				E1FE7DDEB5E88A098DAFD3C1 /* Pods */,
+				4B94E5CAA580452A6587D0E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = OrderPlacementAppUITests;
 			sourceTree = "<group>";
 		};
+		4B94E5CAA580452A6587D0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */,
+				FB8DEC12A37CB318E1A1BC9F /* Pods_OrderPlacementAppTests.framework */,
+				DA76E7158942FF12E6DB7FD9 /* Pods_OrderPlacementAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1FE7DDEB5E88A098DAFD3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83FB2AF9A036B7D44692B283 /* Pods-OrderPlacementApp.debug.xcconfig */,
+				CA53BEBF179BBCA898A9BC6C /* Pods-OrderPlacementApp.release.xcconfig */,
+				C2F303B62BAF0C772AC2F6CA /* Pods-OrderPlacementAppTests.debug.xcconfig */,
+				0A2A7E41D0F6ADC0C1620BE8 /* Pods-OrderPlacementAppTests.release.xcconfig */,
+				26334A42AE7A3386E427EC80 /* Pods-OrderPlacementAppUITests.debug.xcconfig */,
+				6A699CB7CFF624F53E09C835 /* Pods-OrderPlacementAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161AA44B214C093F0022BB7E /* Build configuration list for PBXNativeTarget "OrderPlacementApp" */;
 			buildPhases = (
+				5A4AE182548B5CF384391261 /* [CP] Check Pods Manifest.lock */,
 				161AA41C214C093B0022BB7E /* Sources */,
 				161AA41D214C093B0022BB7E /* Frameworks */,
 				161AA41E214C093B0022BB7E /* Resources */,
+				40406A4D5B9C8876E47A7755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161AA44E214C093F0022BB7E /* Build configuration list for PBXNativeTarget "OrderPlacementAppTests" */;
 			buildPhases = (
+				DDEBFD28A29E89BD10EBFB40 /* [CP] Check Pods Manifest.lock */,
 				161AA433214C093F0022BB7E /* Sources */,
 				161AA434214C093F0022BB7E /* Frameworks */,
 				161AA435214C093F0022BB7E /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161AA451214C093F0022BB7E /* Build configuration list for PBXNativeTarget "OrderPlacementAppUITests" */;
 			buildPhases = (
+				409DE0B020048775DBBECC00 /* [CP] Check Pods Manifest.lock */,
 				161AA43E214C093F0022BB7E /* Sources */,
 				161AA43F214C093F0022BB7E /* Frameworks */,
 				161AA440214C093F0022BB7E /* Resources */,
@@ -253,6 +297,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40406A4D5B9C8876E47A7755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		409DE0B020048775DBBECC00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderPlacementAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A4AE182548B5CF384391261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderPlacementApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEBFD28A29E89BD10EBFB40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderPlacementAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		161AA41C214C093B0022BB7E /* Sources */ = {
@@ -434,15 +553,14 @@
 		};
 		161AA44C214C093F0022BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FB2AF9A036B7D44692B283 /* Pods-OrderPlacementApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -452,15 +570,14 @@
 		};
 		161AA44D214C093F0022BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA53BEBF179BBCA898A9BC6C /* Pods-OrderPlacementApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -470,17 +587,14 @@
 		};
 		161AA44F214C093F0022BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F303B62BAF0C772AC2F6CA /* Pods-OrderPlacementAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -491,17 +605,14 @@
 		};
 		161AA450214C093F0022BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2A7E41D0F6ADC0C1620BE8 /* Pods-OrderPlacementAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -512,16 +623,13 @@
 		};
 		161AA452214C093F0022BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26334A42AE7A3386E427EC80 /* Pods-OrderPlacementAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -532,16 +640,13 @@
 		};
 		161AA453214C093F0022BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A699CB7CFF624F53E09C835 /* Pods-OrderPlacementAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
