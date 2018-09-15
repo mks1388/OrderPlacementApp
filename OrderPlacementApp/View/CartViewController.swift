@@ -44,7 +44,7 @@ class CartViewController: UIViewController {
     
     //MARK: private methods
     
-    private func setupCellConfiguration(_ observable: Observable<[CartProduct]>) {
+    private func setupCellConfiguration(_ observable: Observable<[Product]>) {
         observable.bind(to: self.tableView.rx.items(cellIdentifier: CartProductCell.Identifier, cellType: CartProductCell.self)) {(row, product, cell) in
             cell.configure(with:product)
             }.disposed(by: self.disposeBag)
@@ -54,7 +54,7 @@ class CartViewController: UIViewController {
         self.checkoutButton.isUserInteractionEnabled = ShoppingCart.shared.cartProducts.value.count > 0
         self.checkoutButton.alpha = self.checkoutButton.isUserInteractionEnabled ? 1.0 : 0.4
         if ShoppingCart.shared.cartProducts.value.count > 0 {
-            let sum = ShoppingCart.shared.cartProducts.value.map({$0.product.cost}).reduce(0, +)
+            let sum = ShoppingCart.shared.cartProducts.value.map({$0.cost}).reduce(0, +)
             let title = "Checkout (Rs. \(sum))"
             self.checkoutButton.setTitle(title, for: UIControl.State.normal)
         }

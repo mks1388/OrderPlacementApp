@@ -14,12 +14,11 @@ class ShoppingCart {
     
     static let shared = ShoppingCart()
     
-    var cartProducts: BehaviorRelay<[CartProduct]> = BehaviorRelay(value: [CartProduct]())
-    private var historyProducts: BehaviorRelay<[CartProduct]> = BehaviorRelay(value: [CartProduct]())
+    var cartProducts: BehaviorRelay<[Product]> = BehaviorRelay(value: [Product]())
+    private var historyProducts: BehaviorRelay<[HistoryProduct]> = BehaviorRelay(value: [HistoryProduct]())
     
     func addProductToCart(_ product: Product) {
-        let cartProduct = CartProduct(product: product, date: Date())
-        ShoppingCart.shared.cartProducts.accept(ShoppingCart.shared.cartProducts.value + [cartProduct])
+        ShoppingCart.shared.cartProducts.accept(ShoppingCart.shared.cartProducts.value + [product])
     }
     
     func removeAllProductsFromCart() {
@@ -27,7 +26,13 @@ class ShoppingCart {
     }
     
     func addCartProductsToHistory() {
-        ShoppingCart.shared.historyProducts.accept(ShoppingCart.shared.historyProducts.value + ShoppingCart.shared.cartProducts.value)
+        var products = [HistoryProduct]()
+        let date = Date()
+        for product in ShoppingCart.shared.cartProducts.value {
+            let historyProduct = HistoryProduct(product: product, date: date)
+            products.append(historyProduct)
+        }
+        ShoppingCart.shared.historyProducts.accept(ShoppingCart.shared.historyProducts.value + products)
     }
     
     func removeStaleProductsFromHistory() {
@@ -40,7 +45,7 @@ class ShoppingCart {
         ShoppingCart.shared.historyProducts.accept(products)
     }
     
-    func getHistoryProducts() -> [CartProduct] {
+    func getHistoryProducts() -> [HistoryProduct] {
         removeStaleProductsFromHistory()
         return ShoppingCart.shared.historyProducts.value
     }

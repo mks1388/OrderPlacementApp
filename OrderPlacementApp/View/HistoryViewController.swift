@@ -30,7 +30,7 @@ class HistoryViewController: UIViewController {
     
     //MARK : private methods
     
-    private func setupCellConfiguration(_ observable: Observable<[CartProduct]>) {
+    private func setupCellConfiguration(_ observable: Observable<[HistoryProduct]>) {
         observable.bind(to: self.tableView.rx.items(cellIdentifier: HistoryProductCell.Identifier, cellType: HistoryProductCell.self)) {(row, product, cell) in
             cell.configure(with:product)
             }.disposed(by: self.disposeBag)

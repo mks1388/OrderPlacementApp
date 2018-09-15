@@ -12,7 +12,7 @@ class HistoryProductCell: UITableViewCell {
     
     static let Identifier = "history_product_cell"
     
-    func configure(with cartProduct: CartProduct) {
+    func configure(with cartProduct: HistoryProduct) {
         textLabel?.text = cartProduct.product.name
         detailTextLabel?.text = "Rs. \(cartProduct.product.cost)"
     }

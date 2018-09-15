@@ -1,5 +1,5 @@
 //
-//  CartProduct.swift
+//  HistoryProduct.swift
 //  OrderPlacementApp
 //
 //  Created by Mithilesh on 15/09/18.
@@ -8,12 +8,11 @@
 
 import Foundation
 
-struct CartProduct : Equatable {
+struct HistoryProduct: Equatable {
+    var product: Product
+    var date: Date
     
-    var product:Product
-    var date:Date
-    
-    static func == (lhs: CartProduct, rhs: CartProduct) -> Bool {
+    static func == (lhs: HistoryProduct, rhs: HistoryProduct) -> Bool {
         return lhs.product.name == rhs.product.name
     }
 }

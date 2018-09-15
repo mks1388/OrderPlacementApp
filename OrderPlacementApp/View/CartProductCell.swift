@@ -11,8 +11,8 @@ import UIKit
 class CartProductCell: UITableViewCell {
     static let Identifier = "cart_product_cell"
     
-    func configure(with cartProduct: CartProduct) {
-        textLabel?.text = cartProduct.product.name
-        detailTextLabel?.text = "Rs. \(cartProduct.product.cost)"
+    func configure(with product: Product) {
+        textLabel?.text = product.name
+        detailTextLabel?.text = "Rs. \(product.cost)"
     }
 }
