@@ -7,26 +7,23 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 struct ProductViewModel {
     
-    var productArr:[Product]?
-    
-    mutating func updateProductList() {
-        
-        var currentSelf = self
-        
+    func updateProductList(_ completion: @escaping ([Product]) -> Void) {
         ProductClient.shared.getAllProductList { (data) in
             guard let data = data else {
-                currentSelf.productArr = nil
+                completion([Product]())
                 return
             }
             
             do {
                 let productList = try JSONDecoder().decode(ProductList.self, from: data)
-                currentSelf.productArr = productList.products
+                completion(productList.products)
             } catch {
-                currentSelf.productArr = nil
+                completion([Product]())
             }
         }
     }

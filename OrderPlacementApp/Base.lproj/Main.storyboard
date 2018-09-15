@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="product_cell" textLabel="sWS-wy-A8j" detailTextLabel="A88-fZ-o0w" style="IBUITableViewCellStyleValue1" id="8Fe-P7-Ius">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="product_cell" textLabel="sWS-wy-A8j" detailTextLabel="A88-fZ-o0w" style="IBUITableViewCellStyleValue1" id="8Fe-P7-Ius" customClass="ProductCell" customModule="OrderPlacementApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Fe-P7-Ius" id="iXC-4d-eQw">
@@ -58,14 +58,59 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Product List" id="Zia-gc-NUT"/>
+                    <navigationItem key="navigationItem" title="Product List" id="Zia-gc-NUT">
+                        <rightBarButtonItems>
+                            <barButtonItem image="history" id="D35-6t-4LJ">
+                                <connections>
+                                    <segue destination="uDF-Bh-j1x" kind="show" id="Taz-NE-Bxk"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="cart" style="plain" id="N4L-8y-bHN">
+                                <connections>
+                                    <segue destination="ayy-MD-Ngb" kind="show" id="s5y-3Z-Pic"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
+                        <outlet property="cartItem" destination="N4L-8y-bHN" id="lgo-Jm-pMC"/>
+                        <outlet property="historyItem" destination="D35-6t-4LJ" id="2de-IJ-Pnp"/>
                         <outlet property="tableView" destination="sgZ-QN-v9y" id="LDH-Ne-i3h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="785"/>
+        </scene>
+        <!--Cart View Controller-->
+        <scene sceneID="1y2-ey-bVx">
+            <objects>
+                <viewController id="ayy-MD-Ngb" customClass="CartViewController" customModule="OrderPlacementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GNA-hk-CTm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d6A-Oh-4Hj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d29-KJ-wFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="463"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="I9M-xp-gWg">
+            <objects>
+                <viewController id="uDF-Bh-j1x" customClass="HistoryViewController" customModule="OrderPlacementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FCa-8y-hkN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uaV-GD-l0v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEX-x7-tcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="1146"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aFb-Nn-B6g">
@@ -86,4 +131,8 @@
             <point key="canvasLocation" x="92" y="784.85757121439292"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cart" width="25" height="25"/>
+        <image name="history" width="25" height="25"/>
+    </resources>
 </document>

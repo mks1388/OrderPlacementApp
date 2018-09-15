@@ -19,6 +19,10 @@
 		161AA45B214C259E0022BB7E /* ProductClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA45A214C259E0022BB7E /* ProductClient.swift */; };
 		161AA45D214C26650022BB7E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA45C214C26650022BB7E /* Product.swift */; };
 		161AA461214C33930022BB7E /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA460214C33930022BB7E /* ProductViewModel.swift */; };
+		161AA469214C4AE40022BB7E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA468214C4AE40022BB7E /* ProductCell.swift */; };
+		161AA46B214CDBF20022BB7E /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA46A214CDBF20022BB7E /* CartViewController.swift */; };
+		161AA46D214CDC260022BB7E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA46C214CDC260022BB7E /* HistoryViewController.swift */; };
+		161AA471214CE2190022BB7E /* UIBarButtonItem+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA470214CE2190022BB7E /* UIBarButtonItem+Badge.swift */; };
 		21A2F692306FBA8036DFE281 /* Pods_OrderPlacementApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,10 @@
 		161AA45A214C259E0022BB7E /* ProductClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClient.swift; sourceTree = "<group>"; };
 		161AA45C214C26650022BB7E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		161AA460214C33930022BB7E /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		161AA468214C4AE40022BB7E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		161AA46A214CDBF20022BB7E /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		161AA46C214CDC260022BB7E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		161AA470214CE2190022BB7E /* UIBarButtonItem+Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Badge.swift"; sourceTree = "<group>"; };
 		73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderPlacementApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB2AF9A036B7D44692B283 /* Pods-OrderPlacementApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CA53BEBF179BBCA898A9BC6C /* Pods-OrderPlacementApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +160,9 @@
 			children = (
 				161AA457214C1D4B0022BB7E /* Extensions */,
 				161AA425214C093B0022BB7E /* ViewController.swift */,
+				161AA468214C4AE40022BB7E /* ProductCell.swift */,
+				161AA46A214CDBF20022BB7E /* CartViewController.swift */,
+				161AA46C214CDC260022BB7E /* HistoryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				161AA458214C1D670022BB7E /* UIView+Animation.swift */,
+				161AA470214CE2190022BB7E /* UIBarButtonItem+Badge.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,9 +389,13 @@
 				161AA461214C33930022BB7E /* ProductViewModel.swift in Sources */,
 				161AA45B214C259E0022BB7E /* ProductClient.swift in Sources */,
 				161AA42C214C093B0022BB7E /* OrderPlacementApp.xcdatamodeld in Sources */,
+				161AA46D214CDC260022BB7E /* HistoryViewController.swift in Sources */,
 				161AA459214C1D670022BB7E /* UIView+Animation.swift in Sources */,
+				161AA471214CE2190022BB7E /* UIBarButtonItem+Badge.swift in Sources */,
 				161AA426214C093B0022BB7E /* ViewController.swift in Sources */,
+				161AA469214C4AE40022BB7E /* ProductCell.swift in Sources */,
 				161AA424214C093B0022BB7E /* AppDelegate.swift in Sources */,
+				161AA46B214CDBF20022BB7E /* CartViewController.swift in Sources */,
 				161AA45D214C26650022BB7E /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +576,10 @@
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -577,7 +596,10 @@
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -593,7 +615,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -610,7 +636,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -626,7 +656,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -642,7 +676,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WUJXWXFAR;
 				INFOPLIST_FILE = OrderPlacementAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mithilesh.OrderPlacementAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

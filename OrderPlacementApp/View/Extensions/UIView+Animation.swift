@@ -18,7 +18,7 @@ extension UIView {
         static let zoomScale:CGFloat = 1.2
         static let moveScale:CGFloat = 0.1
         
-        static let minAlpha:CGFloat = 0.0
+        static let minAlpha:CGFloat = 0.4
     }
     
     func applyAddToCartAnimation(parentView: UIView, to centerPoint: CGPoint, _ completion: @escaping (() -> Void)) {
