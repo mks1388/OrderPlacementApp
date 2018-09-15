@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OrderPlacementApp/Model/History+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:OrderPlacementApp/Model/History+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:OrderPlacementApp.xcodeproj">
    </FileRef>
    <FileRef

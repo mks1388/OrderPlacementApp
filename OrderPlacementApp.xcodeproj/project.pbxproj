@@ -27,6 +27,8 @@
 		161AA477214D1B780022BB7E /* CartProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA476214D1B780022BB7E /* CartProductCell.swift */; };
 		161AA47B214D2D6D0022BB7E /* HistoryProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA47A214D2D6D0022BB7E /* HistoryProductCell.swift */; };
 		161AA47D214D33580022BB7E /* HistoryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA47C214D33580022BB7E /* HistoryProduct.swift */; };
+		161AA483214D741A0022BB7E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA482214D741A0022BB7E /* CoreDataManager.swift */; };
+		161AA485214D78140022BB7E /* CoreDataHistoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA484214D78140022BB7E /* CoreDataHistoryTask.swift */; };
 		21A2F692306FBA8036DFE281 /* Pods_OrderPlacementApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		161AA476214D1B780022BB7E /* CartProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductCell.swift; sourceTree = "<group>"; };
 		161AA47A214D2D6D0022BB7E /* HistoryProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryProductCell.swift; sourceTree = "<group>"; };
 		161AA47C214D33580022BB7E /* HistoryProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryProduct.swift; sourceTree = "<group>"; };
+		161AA482214D741A0022BB7E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		161AA484214D78140022BB7E /* CoreDataHistoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHistoryTask.swift; sourceTree = "<group>"; };
 		73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderPlacementApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB2AF9A036B7D44692B283 /* Pods-OrderPlacementApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CA53BEBF179BBCA898A9BC6C /* Pods-OrderPlacementApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 			children = (
 				161AA45A214C259E0022BB7E /* ProductClient.swift */,
 				161AA460214C33930022BB7E /* ProductViewModel.swift */,
+				161AA482214D741A0022BB7E /* CoreDataManager.swift */,
+				161AA484214D78140022BB7E /* CoreDataHistoryTask.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				161AA45C214C26650022BB7E /* Product.swift */,
-				161AA472214D10910022BB7E /* ShoppingCart.swift */,
 				161AA47C214D33580022BB7E /* HistoryProduct.swift */,
+				161AA472214D10910022BB7E /* ShoppingCart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161AA485214D78140022BB7E /* CoreDataHistoryTask.swift in Sources */,
 				161AA461214C33930022BB7E /* ProductViewModel.swift in Sources */,
 				161AA45B214C259E0022BB7E /* ProductClient.swift in Sources */,
 				161AA42C214C093B0022BB7E /* OrderPlacementApp.xcdatamodeld in Sources */,
@@ -412,6 +419,7 @@
 				161AA469214C4AE40022BB7E /* ProductCell.swift in Sources */,
 				161AA424214C093B0022BB7E /* AppDelegate.swift in Sources */,
 				161AA46B214CDBF20022BB7E /* CartViewController.swift in Sources */,
+				161AA483214D741A0022BB7E /* CoreDataManager.swift in Sources */,
 				161AA45D214C26650022BB7E /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
