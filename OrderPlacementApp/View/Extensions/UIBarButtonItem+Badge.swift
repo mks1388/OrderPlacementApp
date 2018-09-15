@@ -16,6 +16,8 @@ extension UIBarButtonItem {
         static let badgeBorderWidth:CGFloat = 20.0
         static let badgeFontSize:CGFloat = 13.0
         static let badgeLabelTag = 1001
+        static let badgeDefaultCount = 0
+        static let badgeMaxCount = 9
         
         static let viewKey = "view"
     }
@@ -40,8 +42,8 @@ extension UIBarButtonItem {
             return
         }
         if let label = view.viewWithTag(Constant.badgeLabelTag) as? UILabel {
-            if count > 9 {
-                label.text = "9+"
+            if count > Constant.badgeMaxCount {
+                label.text = "\(Constant.badgeMaxCount)+"
             } else {
                 label.text = "\(count)"
             }
@@ -58,7 +60,7 @@ extension UIBarButtonItem {
         label.font = UIFont.systemFont(ofSize: Constant.badgeFontSize)
         label.textColor = .white
         label.backgroundColor = .red
-        label.text = "0"
+        label.text = "\(Constant.badgeDefaultCount)"
         label.tag = Constant.badgeLabelTag
         
         return label
