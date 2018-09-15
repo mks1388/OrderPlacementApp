@@ -23,6 +23,10 @@
 		161AA46B214CDBF20022BB7E /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA46A214CDBF20022BB7E /* CartViewController.swift */; };
 		161AA46D214CDC260022BB7E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA46C214CDC260022BB7E /* HistoryViewController.swift */; };
 		161AA471214CE2190022BB7E /* UIBarButtonItem+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA470214CE2190022BB7E /* UIBarButtonItem+Badge.swift */; };
+		161AA473214D10910022BB7E /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA472214D10910022BB7E /* ShoppingCart.swift */; };
+		161AA475214D14220022BB7E /* CartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA474214D14220022BB7E /* CartProduct.swift */; };
+		161AA477214D1B780022BB7E /* CartProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA476214D1B780022BB7E /* CartProductCell.swift */; };
+		161AA47B214D2D6D0022BB7E /* HistoryProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AA47A214D2D6D0022BB7E /* HistoryProductCell.swift */; };
 		21A2F692306FBA8036DFE281 /* Pods_OrderPlacementApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,10 @@
 		161AA46A214CDBF20022BB7E /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		161AA46C214CDC260022BB7E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		161AA470214CE2190022BB7E /* UIBarButtonItem+Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Badge.swift"; sourceTree = "<group>"; };
+		161AA472214D10910022BB7E /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		161AA474214D14220022BB7E /* CartProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProduct.swift; sourceTree = "<group>"; };
+		161AA476214D1B780022BB7E /* CartProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductCell.swift; sourceTree = "<group>"; };
+		161AA47A214D2D6D0022BB7E /* HistoryProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryProductCell.swift; sourceTree = "<group>"; };
 		73388F6819A85FCAE73A4F68 /* Pods_OrderPlacementApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderPlacementApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB2AF9A036B7D44692B283 /* Pods-OrderPlacementApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CA53BEBF179BBCA898A9BC6C /* Pods-OrderPlacementApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderPlacementApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderPlacementApp/Pods-OrderPlacementApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +170,9 @@
 				161AA425214C093B0022BB7E /* ViewController.swift */,
 				161AA468214C4AE40022BB7E /* ProductCell.swift */,
 				161AA46A214CDBF20022BB7E /* CartViewController.swift */,
+				161AA476214D1B780022BB7E /* CartProductCell.swift */,
 				161AA46C214CDC260022BB7E /* HistoryViewController.swift */,
+				161AA47A214D2D6D0022BB7E /* HistoryProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				161AA45C214C26650022BB7E /* Product.swift */,
+				161AA474214D14220022BB7E /* CartProduct.swift */,
+				161AA472214D10910022BB7E /* ShoppingCart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -390,9 +402,13 @@
 				161AA45B214C259E0022BB7E /* ProductClient.swift in Sources */,
 				161AA42C214C093B0022BB7E /* OrderPlacementApp.xcdatamodeld in Sources */,
 				161AA46D214CDC260022BB7E /* HistoryViewController.swift in Sources */,
+				161AA47B214D2D6D0022BB7E /* HistoryProductCell.swift in Sources */,
 				161AA459214C1D670022BB7E /* UIView+Animation.swift in Sources */,
 				161AA471214CE2190022BB7E /* UIBarButtonItem+Badge.swift in Sources */,
+				161AA475214D14220022BB7E /* CartProduct.swift in Sources */,
+				161AA477214D1B780022BB7E /* CartProductCell.swift in Sources */,
 				161AA426214C093B0022BB7E /* ViewController.swift in Sources */,
+				161AA473214D10910022BB7E /* ShoppingCart.swift in Sources */,
 				161AA469214C4AE40022BB7E /* ProductCell.swift in Sources */,
 				161AA424214C093B0022BB7E /* AppDelegate.swift in Sources */,
 				161AA46B214CDBF20022BB7E /* CartViewController.swift in Sources */,

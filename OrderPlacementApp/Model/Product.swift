@@ -7,13 +7,12 @@
 //
 
 import Foundation
-struct ProductList:Codable {
-    
+
+struct ProductList:Codable {    
     var products:[Product]
 }
 
 struct Product: Codable {
     var name:String
     var cost:Int
-    var icon:String
 }

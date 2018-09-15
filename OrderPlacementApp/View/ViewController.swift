@@ -20,8 +20,6 @@ class ViewController: UIViewController {
     
     private var viewModel = ProductViewModel()
     
-    private var cartProducts: BehaviorRelay<[Product]> = BehaviorRelay(value: [Product]())
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,14 +35,17 @@ class ViewController: UIViewController {
         cartItem.addBadge()
     }
     
+    
+    //MARK: private methods
+    
     private func setupCartObserver() {
-        cartProducts.asObservable().subscribe { (products) in
+        ShoppingCart.shared.cartProducts.asObservable().subscribe { (products) in
             self.updateCart()
         }.disposed(by: disposeBag)
     }
     
     private func updateCart() {
-        cartItem.updateBadgecount(count: cartProducts.value.count)
+        cartItem.updateBadgecount(count: ShoppingCart.shared.cartProducts.value.count)
     }
     
     private func setupCellConfiguration(_ observable: Observable<[Product]>) {
@@ -57,12 +58,6 @@ class ViewController: UIViewController {
     
     private func setupCellTabHandling() {
         tableView.rx.modelSelected(Product.self).subscribe(onNext: { (product) in
-//            guard let indexPath = self.tableView.indexPathForSelectedRow else {
-//                return
-//            }
-//            self.tableView.deselectRow(at: indexPath, animated: true)
-//            self.cartProducts.accept(self.cartProducts.value + [product])
-
             guard let indexPath = self.tableView.indexPathForSelectedRow, let window = UIApplication.shared.keyWindow, let cartView = self.cartItem.value(forKey: "view") as? UIView else {
                 return
             }
@@ -77,7 +72,7 @@ class ViewController: UIViewController {
                 let cartPoint = cartView.convert(cartView.frame.origin, to: nil)
                 let center = CGPoint(x: cartPoint.x + cartView.frame.size.width/2, y: cartPoint.y + cartView.frame.size.height/2)
                 label.applyAddToCartAnimation(parentView: window, to: center, {
-                    self.cartProducts.accept(self.cartProducts.value + [product])
+                    ShoppingCart.shared.addProductToCart(product)
                 })
             }
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
